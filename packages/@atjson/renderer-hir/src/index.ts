@@ -178,7 +178,7 @@ export default class Renderer {
   }
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  text(text: string, _: Context): string {
+  text(text: string, _: Context): any {
     return text;
   }
 }
