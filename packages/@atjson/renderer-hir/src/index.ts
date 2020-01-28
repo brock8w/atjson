@@ -72,7 +72,7 @@ function isTextAnnotation(a: Annotation<any>): a is TextAnnotation {
 function getChildNodeAnnotations(childNode: HIRNode) {
   if (isTextAnnotation(childNode.annotation)) {
     return {
-      type: "text",
+      type: "text" as const,
       start: childNode.start,
       end: childNode.end,
       attributes: {
